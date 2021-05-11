@@ -11,6 +11,13 @@
         <meta property="og:image" itemprop="image" content="images/David-Profile.jpg">
         <meta property="og:type" content="website" />
         <script src="js/counter.js"></script>
+        <script>
+          $( document ).ready(function() {
+            $.get("https://resumefunctionapp.azurewebsites.net/api/HttpTrigger1", function(data, status){
+                 $("#count").text(data.Count)
+              });
+          });
+          </script>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <title>Hey, It's David Lehrner</title>
@@ -72,6 +79,7 @@
                           </a>
                         </div>
                         <div id="visitorElem" style="display: none;"><span id="counter"></span> people viewed this resume</div>
+                        <div id="visitorElem" style="display: none;"><span id="count" class="visitcount"></span>PEOPLE VIEWED THIS RESUME</div>
                         <br>
                       </div>
                     </div>

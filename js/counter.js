@@ -13,7 +13,7 @@ fetch([apiUrl, appendUrl].join(''))
         //count = response.VisitorCount;
         //document.getElementById('visitorElem').innerHTML = 'You are visitor ' + count + '.';
         
-        const count = res.Attributes.visitcount;
+        const count = res.Attributes.count;
         document.getElementById('counter').innerText = count;
         document.getElementById('visitorElem').style.display = 'block';
     })
