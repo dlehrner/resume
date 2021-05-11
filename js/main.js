@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     getVisitCount();
 });
 
-const apiGateway = 'https://resumefunctionapp.azurewebsites.net/api/httptrigger1'; 
+const apiGateway = 'https://resumefunctionapp.azurewebsites.net/api/HttpTrigger1?code=L3eZuVosq54FjIrGaSOGtILcKLnOgLjHuShFuL9zZcl/NHlTFClemA=='; 
 
 const getVisitCount = () => {
     let count = 0;
