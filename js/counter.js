@@ -10,8 +10,12 @@ fetch([apiUrl, appendUrl].join(''))
     .then (response => {
         console.log('Fetch succeeded to function.');
         console.log(response);
-        count = response.VisitorCount;
-        document.getElementById('visitorElem').innerHTML = 'You are visitor ' + count + '.';
+        //count = response.VisitorCount;
+        //document.getElementById('visitorElem').innerHTML = 'You are visitor ' + count + '.';
+        
+        const count = res.Attributes.visitcount;
+        document.getElementById('counter').innerText = count;
+        document.getElementById('visitorElem').style.display = 'block';
     })
     .catch(error => {
         console.error('There has been a problem with your fetch operation:', error);
