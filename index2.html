@@ -15,7 +15,7 @@
         <script>
           $( document ).ready(function() {
             $.get("https://resumefunctionapp.azurewebsites.net/api/HttpTrigger1", function(data, status){
-                  $("#count").text(data.Count)
+                  $("#count").text(data.Counter)
               });
           });
         </script>
