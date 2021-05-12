@@ -11,8 +11,9 @@
         <meta property="og:image" itemprop="image" content="images/David-Profile.jpg">
         <meta property="og:type" content="website" />
         <script src="js/counter.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
-          $(document).ready(function() {
+          $( document ).ready(function() {
             $.get("https://resumefunctionapp.azurewebsites.net/api/HttpTrigger1", function(data, status){
                   $("#count").text(data.Count)
               });
