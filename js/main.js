@@ -13,7 +13,7 @@ const getVisitCount = () => {
         return response.json()
     })
     .then(res => {
-        const count = res.counter;
+        const count = response.body;
         document.getElementById('counter').innerText = count;
         document.getElementById('visitorElem').style.display = 'block';
     })
